@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-mscroll : This is a jQuery plugin enables to force to fire scroll event in mobile devices." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-mscroll</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/emn178/jquery-mscroll">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-mscroll</h1>
+          <h2 id="project_tagline">This is a jQuery plugin enables to force to fire scroll event in mobile devices.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/emn178/jquery-mscroll/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/emn178/jquery-mscroll/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jquery-mscroll" class="anchor" href="#jquery-mscroll"><span class="octicon octicon-link"></span></a>jQuery-mscroll</h1>
+
+<p>This is a jQuery plugin enables to force to fire scroll event in mobile devices.</p>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="http://emn178.github.io/jquery-stickit/demo/header/">Without jQuery-mscroll</a><br><a href="http://emn178.github.io/jquery-mscroll/demo/stickit/">With jQuery-mscroll</a></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ul>
+<li>Just includes it.</li>
+<li>MUST use <code>window</code> instead of <code>document</code>.</li>
+<li>MUST use jQuery methods <code>scrollTop()</code> and <code>scrollLeft()</code>.</li>
+</ul><h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Code</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scroll</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">());</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>This will not work.</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">scroll</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>This will append to scroll wrapper, so it's OK.</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The project is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>The project's website is located at <a href="https://github.com/emn178/jquery-mscroll">https://github.com/emn178/jquery-mscroll</a><br>
+Author: <a href="mailto:emn178@gmail.com">emn178@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-mscroll maintained by <a href="https://github.com/emn178">emn178</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44208259-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
