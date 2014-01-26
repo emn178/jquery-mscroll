@@ -1,6 +1,10 @@
 # jQuery-mscroll
 This is a jQuery plugin enables to force to fire scroll event in mobile devices.
 
+*Notice*
+* This will affect performance.
+* This will disable scroll momentun in iOS device.
+
 ## Demo 
 [Without jQuery-mscroll](http://emn178.github.io/jquery-stickit/demo/header/)  
 [With jQuery-mscroll](http://emn178.github.io/jquery-mscroll/demo/stickit/)
