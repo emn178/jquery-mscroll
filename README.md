@@ -1,5 +1,5 @@
 # jQuery-mscroll
-This is a jQuery plugin enables to force to fire scroll event in mobile devices.
+A jQuery plugin enables to force to fire scroll event in mobile devices.
 
 **Notice**
 * This will affect performance.
